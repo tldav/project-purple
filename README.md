@@ -1,76 +1,80 @@
-# Project 2 Template
+# plumm.it
 
+## Summary
 
-## Instructions
+A forum website that allows users to create and comment on threads with sign up and authentication. 
 
-Use this boilerplate code for Project 2. Follow the instructions below to set up your project
+## Table of Contents
 
-### Branch Protection Rules
-1. In Github, go to Settings > Branches > Branch Protection Rules > Add Rule
-2. To apply rules to the master branch, type `master` in the branch name pattern
-3. Apply the following rules
-    - Require pull request reviews before merging
-    - Require status checks to pass before merging
-         - Require branches to be up to date before merging
-    - Include administrators
+1. [Contributors](#contributors)
+2. [Technologies](#technologies)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contributing](#contributing)
+6. [Questions](#questions)
 
-### ESLint & Travis CI
+## Contributors
 
-#### ESLint
-__ESLint__ ensures our code styles are consistent across a project. The styling rules for eslint can be defined in the [.eslintrc.json file](./.eslintrc.json)
+<p id="contributors"></p>
+<a href="https://github.com/tldav" target="blank">Thomas Davis</a>
+<br>
+<a href="https://github.com/marcustate" target="blank">Marcus Tate</a>
+<p></p>
 
+## Technologies
 
-Download the [ESLint VSCode Extension here](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). You can also download the [Prettier VS Code Extension here](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) to auto format your code. I have included some default rules in the [settings.json](./.vscode/settings.json) file to ensure they will work together.
+<p id="technologies"></p>
 
-#### Travis CI
-__Travis CI__ tests our code for us when a pull request is opened. If Github branch protections are set up correctly, Travis CI should block pull requests when the tests failed. Tests for Travis CI are specified in the `test` script of the [package.json file](./package.json). For our purposes, we will just be using Travis CI to ensure our ESLint rules are followed before allowing deployment.   
+JavaScript
+jQuery
+Handlebars
+Tailwind Css
+Node
+Express
+MySQL
+Sequelize
+bcrypt
 
+Deployed using Heroku
 
-Click [here](https://github.com/marketplace/travis-ci) to set up Travis CI. Make sure to give it access to your project repository
+## Usage
 
-## Project Requirements
+<p id="usage"></p>
 
-### Code Requirements
+### To Install
 
-* Must use a Node and Express server
+`npm i`
 
-* Must be backed by a MySQL database and an ORM (not necessarily Sequelize)
+### To Start
 
-* Must utilize both GET and POST routes for retrieving and adding new data
+`npm start`
 
-* Must be deployed using Heroku (with data)
+Find the deployed application [here](https://warm-plains-89008.herokuapp.com/)
 
-* Must utilize at least one new third-party API
+## License
 
-* Must have a polished UI
+<p id='license'></p>
 
-* Must use a CSS framework _other than_ Bootstrap
+[MIT](https://choosealicense.com/licenses/mit/)
 
-* Must follow MVC paradigm
+## Contributing
 
-* Must meet good quality coding standards (indentation, scoping, naming)
+<p id='contributing'></p>
 
-### Presentation Requirements
+If you would like to contribute to this project you can:
 
-Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following: 
+-   Either fork or clone this repo [here](https://github.com/tldav/project-purple)
+-   Add any changes/upgrades you would like
+-   Update the README with changes made, new technologies used, etc.
+-   Create a new pull request [here](https://github.com/tldav/project-purple/compare)
 
-* Elevator pitch: a one minute description of your application
+## Questions
 
-* Concept: What is your user story? What was your motivation for development?
+<p id='questions'></p>
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+If you have questions about this application, please reach out to the creators via the email on their respective GitHub profiles, provided above.
 
-* Demo: Show your stuff!
+<p></p>
+<p></p>
 
-* Directions for Future Development
-
-* Links to to the deployed application and the GitHub repository
-
-### Grading Metrics
-| Metric        | Weight | 
-| ---           | ---    |
-| Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
-| Collaboration | 30%    |
-| Presentation  | 10%    |
+![demo](public/img/sample.PNG)
